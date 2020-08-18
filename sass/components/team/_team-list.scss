@@ -1,0 +1,13 @@
+.team-section {
+  background-color: #f5f4fa;
+}
+
+.team {
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

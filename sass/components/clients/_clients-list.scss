@@ -1,0 +1,14 @@
+.clients-list {
+  margin-bottom: -30px;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+}

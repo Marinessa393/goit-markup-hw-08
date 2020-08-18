@@ -1,0 +1,34 @@
+.contacts-link {
+  display: inline-flex;
+  align-items: baseline;
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  & .icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-left: auto;
+    margin-right: auto;
+
+    &-link {
+      font-size: 18px;
+    }
+
+    & li + li {
+      margin-top: 16px;
+    }
+  }
+}

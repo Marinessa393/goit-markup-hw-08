@@ -11,42 +11,49 @@
 
 <body>
     <!-- шапка -->
-    <header>
+    <header class="page-header">
       <div class="container header-box">
         <nav class="navigation">
             <a href="./index.html" class="logo"><span class="logo-part">Web</span> Studio</a>
-            <ul class="nav-list">
-              <li>
-                <a href="./index.html" class="nav-link current">Студия</a>
-              </li>
-              <li>
-                <a href="./portfolio.html" class="nav-link">Портфолио</a>
-              </li>
-              <li>
-                <a href="" class="nav-link">Контакты</a>
-              </li>
-            </ul>
+            <div class="menu-container" data-menu>
+              <ul class="nav-list">
+                <li>
+                  <a href="./index.html" class="nav-link current">Студия</a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="nav-link">Портфолио</a>
+                </li>
+                <li>
+                  <a href="" class="nav-link">Контакты</a>
+                </li>
+              </ul>
+              
+              <ul class="contacts">
+                <li>
+                  <a href="mailto:info@devstudio.com" class="contacts-link">
+                    <svg class="icon" width="16" height="12">
+                      <use href="./images/svg/symbol-defs.svg#envelope"></use>
+                    </svg>
+                    <p>info@devstudio.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="contacts-link">
+                    <svg class="icon" width="10" height="16">
+                      <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+                    </svg>
+                    <p>+38 096 111 11 11</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="menu-btn" aria-expanded="false" data-menu-button>
+              <svg class="menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                <use href="./images/svg/symbol-defs.svg#menu" class="open-icon"></use>
+                <use href="./images/svg/symbol-defs.svg#closemenu" class="close-icon"></use>
+              </svg>
+            </button>
         </nav>
-
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts-link">
-              <svg class="icon" width="16" height="12">
-                <use href="./images/svg/symbol-defs.svg#envelope"></use>
-              </svg>
-              <p>info@devstudio.com</p>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts-link">
-              <svg class="icon" width="10" height="56">
-                <use href="./images/svg/symbol-defs.svg#smartphone"></use>
-              </svg>
-              <p>+38 096 111 11 11</p>
-            </a>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <main>
@@ -103,7 +110,7 @@
       </div>
       </section>
         
-      <section class="section">
+      <section class="section actions-section">
         <div class="container">
           <h2 class="primary-title">Чем мы занимаемся</h2>
           <ul class="actions">
@@ -128,7 +135,7 @@
           <h2 class="primary-title">Наша команда</h2>
           <ul class="team">
             <li class="card">
-              <img src="./images/hero1.jpg" alt="" width="270">
+              <img src="./images/hero1.jpg" alt="" class="card-img">
               <h3 class="title">Игорь Демьяненко</h3>
               <p>Product Designer</p>
               <ul class="team-socials">
@@ -163,7 +170,7 @@
              </ul> 
             </li>
             <li class="card">
-              <img src="./images/hero2.jpg" alt="" width="270">
+              <img src="./images/hero2.jpg" alt="" class="card-img">
               <h3 class="title">Ольга Репина</h3>
               <p>Frontend Developer</p>
               <ul class="team-socials">
@@ -198,7 +205,7 @@
              </ul> 
             </li>
             <li class="card">
-              <img src="./images/hero3.jpg" alt="" width="270">
+              <img src="./images/hero3.jpg" alt="" class="card-img">
               <h3 class="title">Николай Тарасов</h3>
               <p>Marketing</p>
               <ul class="team-socials">
@@ -233,7 +240,7 @@
              </ul> 
             </li>
             <li class="card">
-              <img src="./images/hero4.jpg" alt="" width="270">
+              <img src="./images/hero4.jpg" alt="" class="card-img">
               <h3 class="title">Михаил Ермаков</h3>
               <p>UI Designer</p>
               <ul class="team-socials">
@@ -442,5 +449,6 @@
       </form>
     </div>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>

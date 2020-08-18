@@ -1,0 +1,38 @@
+.footer-address {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  & .logo {
+    margin-bottom: 20px;
+    color: $main-white-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.67;
+    text-transform: none;
+  }
+}
+
+.address-container {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.71;
+
+  & .text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & .text:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-contacts {
+  color: $footer-text-color;
+}
