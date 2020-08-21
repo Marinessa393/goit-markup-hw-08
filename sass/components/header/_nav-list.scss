@@ -1,6 +1,41 @@
+@media screen and (max-width: 767px) {
+  .nav-list {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & li + li {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    & li + li {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .nav-list {
+    margin-left: 93px;
+  }
+}
+
 .nav-link {
   position: relative;
   display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   color: $title-text-color;
 
   &:hover,
@@ -21,21 +56,14 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav-list {
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-
-    & li + li {
-      margin-top: 40px;
-    }
-  }
-
+@media screen and (min-width: $tablet) {
   .nav-link {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+    padding: 32px 0px;
+    font-size: 14px;
+    line-height: 1.42;
+
+    &.current::after {
+      bottom: -1px;
+    }
   }
 }

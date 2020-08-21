@@ -32,7 +32,7 @@
               <ul class="contacts">
                 <li>
                   <a href="mailto:info@devstudio.com" class="contacts-link">
-                    <svg class="icon" width="16" height="12">
+                    <svg class="icon icon-envelope">
                       <use href="./images/svg/symbol-defs.svg#envelope"></use>
                     </svg>
                     <p>info@devstudio.com</p>
@@ -40,7 +40,7 @@
                 </li>
                 <li>
                   <a href="tel:+380961111111" class="contacts-link">
-                    <svg class="icon" width="10" height="16">
+                    <svg class="icon icon-phone">
                       <use href="./images/svg/symbol-defs.svg#smartphone"></use>
                     </svg>
                     <p>+38 096 111 11 11</p>
@@ -350,7 +350,7 @@
         </div>
   <!-- ссылки на социальные сети -->
         <div class="footer-socials">
-          <b>присоединяйтесь</b>
+          <b class="subtitle">присоединяйтесь</b>
           <ul class="socials-list">
             <li class="item">
               <a href="https://www.instagram.com/" class="link">
@@ -384,7 +384,7 @@
         </div>
   <!-- форма подписки на рассылку -->
         <div class="footer-mail">
-          <b>Подпишитесь на рассылку</b>
+          <b class="subtitle">Подпишитесь на рассылку</b>
           <form action="" class="form">
             <input type="email" name="email" class="footer-input" placeholder="E-mail"/> 
             
@@ -405,30 +405,30 @@
         <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
           <label class="form-field">
             <span class="label">Имя</span>
-            <input type="name" name="name"class="form-input" />
-            <span class="modal-icon">
+           <div class="input-field">
+              <input type="name" name="user-name" class="form-input" required />
               <svg class="icon">
                 <use href="./images/svg/symbol-defs.svg#modal-name"></use>
               </svg>
-            </span>
+           </div>
           </label>
           <label class="form-field">
             <span class="label">Телефон</span>
-            <input type="tel" name="tel" class="form-input" />
-            <span class="modal-icon">
+           <div class="input-field">
+              <input type="tel" name="user-phone" class="form-input" required />
               <svg class="icon">
                 <use href="./images/svg/symbol-defs.svg#modal-tel"></use>
               </svg>
-            </span>
+           </div>
           </label>
           <label class="form-field">
             <span class="label">Почта</span>
-            <input type="email" name="mail" id="email" class="form-input" />
-            <span class="modal-icon">
+           <div class="input-field">
+              <input type="email" name="user-mail" id="email" class="form-input" required />
               <svg class="icon">
                 <use href="./images/svg/symbol-defs.svg#modal-mail"></use>
               </svg>
-            </span>
+           </div>
           </label>
 
           <label class="form-field comment-field">
@@ -437,7 +437,7 @@
           </label>
 
         <label class="policy">
-          <input type="checkbox" name="agreement" class="checkbox"/>
+          <input type="checkbox" name="agreement" class="checkbox" required/>
           <span class="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
         </label>
     

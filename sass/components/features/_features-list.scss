@@ -1,13 +1,16 @@
 @media screen and (min-width: $desktop) {
   .features-section {
+    display: block;
     padding-bottom: 0;
   }
 }
 
 .features {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: $tablet) {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -29,21 +32,27 @@
 
 .features .list {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (max-width: 1199px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
   @media screen and (min-width: $mobile) {
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 352px;
+    width: calc(50% - 30px);
+    margin: 15px;
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 120px) / 4);
+    }
   }
 
   & p {
@@ -52,26 +61,3 @@
     line-height: 1.71;
   }
 }
-
-// .features {
-//   display: flex;
-//   line-height: 1.7;
-
-//   & .list {
-//     width: calc((100% - 90px) / 4);
-//   }
-
-//   & .list:not(:last-child) {
-//     margin-right: 30px;
-//   }
-
-//   & .section-title {
-//     margin-top: 30px;
-//     margin-bottom: 10px;
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: 1.14;
-//     color: $title-text-color;
-//     text-transform: uppercase;
-//   }
-// }

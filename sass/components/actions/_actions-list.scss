@@ -1,5 +1,36 @@
 .actions-section {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
+  }
+}
+.actions {
+  display: flex;
+
+  & .list {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+
+  & .list:last-child {
+    margin-right: 0;
+  }
+
+  & .section-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    color: $main-white-color;
+    background-color: rgba(47, 48, 58, 0.8);
   }
 }

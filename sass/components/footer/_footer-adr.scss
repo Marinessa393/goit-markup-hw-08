@@ -1,11 +1,11 @@
 .footer-address {
-  margin-top: 60px;
   margin-bottom: 60px;
 
   & .logo {
+    margin-top: 0;
     margin-bottom: 20px;
     color: $main-white-color;
-    font-family: Raleway, sans-serif;
+    font-family: $logo-font;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.67;
@@ -13,9 +13,26 @@
   }
 }
 
+@media screen and (min-width: $tablet) {
+  .footer-address {
+    width: calc(50-15px);
+    margin-left: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .footer-address {
+    width: calc(25% - 30px);
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .address-container {
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
   text-transform: none;
   line-height: 1.71;
 

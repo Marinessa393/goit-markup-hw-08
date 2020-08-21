@@ -1,24 +1,32 @@
-// .footer-mail {
-//   display: flex;
+.footer-mail {
+  display: block;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
 
-//   @media screen and (max-width: 1199px) {
-//     flex-direction: column;
-//     align-items: center;
-//   }
-// }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    width: calc(50% - 15px);
+  }
+}
 
 .form {
   width: 100%;
-  display: flex;
   margin-top: 20px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+
+    & .submit-btn {
+      margin-right: 0;
+    }
   }
 }
 
@@ -40,10 +48,14 @@
     border-color: $accent-color;
     outline: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .button-icon {
-  margin-left: uato;
   width: 20px;
   height: 20px;
   margin-left: 10px;

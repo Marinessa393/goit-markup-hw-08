@@ -1,3 +1,14 @@
+.footer-socials {
+  @media screen and (min-width: $tablet) {
+    width: calc(50%-15px);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc(25% - 30px);
+  }
+}
+
 .socials-list {
   display: flex;
   justify-content: center;
