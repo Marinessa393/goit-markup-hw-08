@@ -11,10 +11,6 @@
     margin-left: auto;
     margin-right: auto;
 
-    &-link {
-      font-size: 18px;
-    }
-
     & li + li {
       margin-top: 16px;
     }
@@ -37,6 +33,7 @@
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  font-size: 18px;
 
   &:hover,
   &:focus {
@@ -52,13 +49,15 @@
     margin-right: 10px;
     fill: currentColor;
   }
-}
 
-@media screen and (min-width: $tablet) {
-  .contacts-link {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
   }
 }
 
