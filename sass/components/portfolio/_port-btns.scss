@@ -17,6 +17,10 @@
       margin-bottom: 0;
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 }
 
 .filter-buttons .btn {

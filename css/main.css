@@ -628,20 +628,12 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
   .contacts li + li {
     margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .contacts {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .contacts li + li {
     margin-top: 16px;
   }
@@ -771,20 +763,59 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
+  width: 100%;
   height: 400px;
   padding: 118px 0px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/header.jpg);
+  background-color: #c4c4c4;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero-bg/header480.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg/header480.webp);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero-bg/header480-2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg/header480-2x.webp);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero-bg/header768.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg/header768.webp);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero-bg/header768-2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg/header768-2x.webp);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 0px;
+    max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero-bg/header1200.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg/header1200.webp);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/hero-bg/header1200-2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg/header1200-2x.webp);
   }
 }
 
@@ -956,16 +987,13 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: -15px;
 }
 
 .actions .list {
   position: relative;
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-}
-
-.actions .list:last-child {
-  margin-right: 0;
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
 }
 
 .actions .section-title {
@@ -973,10 +1001,8 @@ body.modal-open {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  margin: 0;
+  padding: 27px 0px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -987,7 +1013,6 @@ body.modal-open {
 }
 
 .team-section {
-  display: block;
   background-color: #f5f4fa;
 }
 
@@ -1007,7 +1032,7 @@ body.modal-open {
 }
 
 .card {
-  width: 100%;
+  max-width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1033,12 +1058,33 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .card {
-    max-width: 270px;
+    max-width: calc(25% - 30px);
   }
 }
 
 .card-img {
-  width: 100%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .card-img {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-img {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .card .title {
@@ -1162,8 +1208,8 @@ body.modal-open {
   border-radius: 4px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   color: #afb1b8;
 }
@@ -1204,6 +1250,14 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .filter-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .filter-buttons .btn {
   padding-top: 6px;
   padding-left: 22px;
@@ -1233,31 +1287,41 @@ body.modal-open {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .examples-item {
-  display: block;
-  width: 100%;
-  margin-bottom: 30px;
+  max-width: 100%;
   background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
   .examples-item {
-    max-width: 450px;
+    width: 450px;
   }
-  .examples-item:last-child {
-    margin-bottom: 0;
+  .examples-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .examples-item {
-    max-width: 352px;
+    width: calc(50% - 30px);
+    margin: 15px;
   }
-  .examples-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .examples-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-item {
+    width: calc((100% - 90px) / 3);
   }
 }
 
@@ -1281,7 +1345,6 @@ body.modal-open {
 .ex-img {
   position: relative;
   overflow: hidden;
-  max-width: 100%;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1289,7 +1352,25 @@ body.modal-open {
 }
 
 .ex-img .img {
-  width: 100%;
+  height: 294px;
+}
+
+@media screen and (max-width: 767px) {
+  .ex-img .img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ex-img .img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ex-img .img {
+    width: 370px;
+  }
 }
 
 .examples-overlay {
@@ -1318,6 +1399,7 @@ body.modal-open {
 }
 
 .ex-meta {
+  min-width: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
