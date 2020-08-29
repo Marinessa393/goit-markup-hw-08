@@ -57,23 +57,20 @@
 }
 
 .icon-envelope {
-  @media screen and (max-width: 767px) {
-    width: 16px;
-    height: 12px;
-  }
-  @media screen and (min-width: $tablet) {
+  width: 16px;
+  height: 12px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 14px;
     height: 10px;
   }
 }
 
 .icon-phone {
-  @media screen and (max-width: 767px) {
-    width: 12px;
-    height: 15px;
-  }
+  width: 12px;
+  height: 15px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 10px;
     height: 14px;
   }

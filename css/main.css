@@ -415,19 +415,6 @@ img {
   }
 }
 
-.submit-btn {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.submit-btn:hover, .submit-btn:focus {
-  background-color: #188ce8;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 .primary-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,28 +422,29 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px 29px;
+  min-width: 200px;
   height: 50px;
   color: #ffffff;
   background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  border-color: transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .primary-button:hover, .primary-button:focus {
   color: #2196f3;
   background-color: #ffffff;
-  border-color: #2196f3;
 }
 
 .primary-title {
@@ -509,8 +497,8 @@ img {
 
 .logo {
   display: block;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #212121;
   font-family: Raleway, sans-serif;
   font-size: 24px;
@@ -519,6 +507,13 @@ img {
 
 .logo-part {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -710,28 +705,24 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .icon-envelope {
-    width: 16px;
-    height: 12px;
-  }
+.icon-envelope {
+  width: 16px;
+  height: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .icon-envelope {
     width: 14px;
     height: 10px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .icon-phone {
-    width: 12px;
-    height: 15px;
-  }
+.icon-phone {
+  width: 12px;
+  height: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .icon-phone {
     width: 10px;
     height: 14px;
@@ -1547,7 +1538,7 @@ body.modal-open {
 }
 
 .modal-title {
-  display: inline-block;
+  display: block;
   margin-bottom: 12px;
   color: #212121;
   font-size: 20px;
@@ -1584,7 +1575,7 @@ body.modal-open {
 .form-input {
   display: block;
   padding-left: 35px;
-  min-width: 100%;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1636,28 +1627,28 @@ body.modal-open {
 }
 
 .comment-field textarea::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .comment-field textarea:-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .comment-field textarea::-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .comment-field textarea::placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -1716,6 +1707,18 @@ body.modal-open {
   border-radius: 2px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn {
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn:hover, .submit-btn:focus {
+  color: #ffffff;
+  background-color: #188ce8;
 }
 
 .close-btn {
