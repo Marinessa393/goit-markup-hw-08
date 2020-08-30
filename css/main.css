@@ -1156,6 +1156,12 @@ body.modal-open {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-link {
+    margin-bottom: 30px;
+  }
+}
+
 .clients-list {
   display: block;
 }
