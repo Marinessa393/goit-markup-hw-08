@@ -1,11 +1,13 @@
 .footer-socials {
+  margin-bottom: 60px;
   @media screen and (min-width: $tablet) {
     width: calc(50%-15px);
-    margin-right: 30px;
   }
 
   @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
     width: calc(25% - 30px);
+    text-align: left;
   }
 }
 
@@ -13,7 +15,10 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: flex-start;
+  }
 
   & .item:not(:last-child) {
     margin-right: 10px;

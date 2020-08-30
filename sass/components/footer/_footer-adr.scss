@@ -2,13 +2,14 @@
   margin-bottom: 60px;
 
   & .logo {
+    padding: 0;
     margin-top: 0;
     margin-bottom: 20px;
     color: $main-white-color;
     font-family: $logo-font;
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.67;
+    line-height: 1.17;
     text-transform: none;
   }
 }
@@ -26,6 +27,11 @@
     margin-left: 0;
     text-align: left;
     margin-bottom: 0;
+
+    & .logo {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 }
 
@@ -38,15 +44,15 @@
 
   & .text {
     margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  & .text:not(:last-child) {
     margin-bottom: 8px;
 
     @media screen and (min-width: $desktop) {
       margin-bottom: 9px;
     }
+  }
+
+  & .text:last-child {
+    margin-bottom: 0;
   }
 }
 
