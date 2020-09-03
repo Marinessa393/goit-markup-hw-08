@@ -16,15 +16,15 @@
 
 @media screen and (min-width: $tablet) {
   .footer-address {
-    width: calc(50-15px);
-    margin-left: 16px;
+    width: calc(50%-15px);
+    margin-right: 165px;
   }
 }
 
 @media screen and (min-width: $desktop) {
   .footer-address {
     width: calc(25% - 30px);
-    margin-left: 0;
+    margin-right: 0;
     text-align: left;
     margin-bottom: 0;
 

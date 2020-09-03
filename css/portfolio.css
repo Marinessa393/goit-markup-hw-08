@@ -989,9 +989,9 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1000,11 +1000,11 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .footer-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
@@ -1026,15 +1026,15 @@ footer {
 
 @media screen and (min-width: 768px) {
   .footer-address {
-    width: calc(50-15px);
-    margin-left: 16px;
+    width: calc(50%-15px);
+    margin-right: 165px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-address {
     width: calc(25% - 30px);
-    margin-left: 0;
+    margin-right: 0;
     text-align: left;
     margin-bottom: 0;
   }
