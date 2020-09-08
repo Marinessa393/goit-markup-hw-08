@@ -1556,6 +1556,20 @@ body.modal-open {
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+@media screen and (min-width: 480px) and (max-height: 600px) {
+  .modal {
+    -webkit-transform: translate(-50%, -25%) scale(1);
+            transform: translate(-50%, -25%) scale(1);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 480px) {
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(1.25);
             transform: translate(-50%, -50%) scale(1.25);
